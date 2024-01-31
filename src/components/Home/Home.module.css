@@ -1,0 +1,54 @@
+.divContenedor {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-size: 100% 100%;
+  background-position: center;
+  min-height: 100vh;
+  gap: 6vw;
+}
+
+
+
+
+.divRutas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  gap: 10vw; 
+}
+
+.createButton{
+  background-color: blanchedalmond;
+}
+
+
+
+.text {
+  color: azure;
+  text-align: center; 
+  font-size: 20px; 
+  line-height: 1.5;
+  margin: 0; 
+  padding: 10px;
+}
+
+
+.enterButton {
+  background-color: #35495e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.enterButton:hover {
+  background-color: #283745;
+}

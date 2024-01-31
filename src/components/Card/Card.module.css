@@ -1,0 +1,66 @@
+:root {
+  --color-fondo: #ffffff; 
+  --color-titulo: #f0f0f0;
+  --color-texto: #737b8b; 
+  --color-borde: #d1d9e6; 
+  --color-hover: #08388b; 
+}
+
+.divCarta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  height: 400px;
+  padding: 10px;
+  margin: 10px auto;
+  background-color: rgba(45, 43, 112, 0.5);
+  border: 1px solid var(--color-borde);
+  border-radius: 16px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.divCarta:hover {
+  background-color: var(--color-hover);
+  transform: translateY(-5px);
+}
+
+.carta {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+h1{
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: var(--color-titulo);
+}
+
+h5{
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9em;
+  text-align: center;
+  color: var(--color-titulo);
+
+}
+
+.imagen {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--color-borde);
+  transition: transform 0.3s ease;
+}
+
+.divCarta:hover .imagen {
+  transform: scale(1.04);
+}
+
+.icono {
+  font-size: 1.5em;
+  color: var(--color-titulo);
+}
