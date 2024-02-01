@@ -10,7 +10,7 @@ export const POST_RECIPES ="POST_RECIPES";
 export const GET_DETAIL = "GET_DETAIL"
 
 export const getRecipes = () => {
-    const endpoint = 'http://localhost:3001/recipes';
+    const endpoint = 'https://bestfood-back.onrender.com/recipes';
     return async (dispatch) => {
         const { data } = await axios.get(endpoint)
         try {
@@ -54,7 +54,7 @@ export const filterCreated = (payload) => {
 }
 
 export const getNameRecipes = (payload) => {
-    const endpoint = 'http://localhost:3001/recipes?name=';
+    const endpoint = 'https://bestfood-back.onrender.com/recipes?name=';
     return async (dispatch) => {
         try {
             const { data } = await axios.get(endpoint + payload)
@@ -71,7 +71,7 @@ export const getNameRecipes = (payload) => {
 export const getDiets = () => {
     return async (dispatch) => {
         try {
-            let { data } = await axios.get("http://localhost:3001/diets",{});   
+            let { data } = await axios.get("https://bestfood-back.onrender.com/diets",{});   
             return dispatch({
                 type: GET_DIETS,
                 payload: data,
@@ -85,7 +85,7 @@ export const getDiets = () => {
 export const postRecipe = (payload) => {
     return async (dispatch) => {
         try {
-            const response = await axios.post("http://localhost:3001/recipes", payload)
+            const response = await axios.post("https://bestfood-back.onrender.com/recipes", payload)
             alert("Recipe created")
             return response
         } catch (error) {
@@ -95,7 +95,7 @@ export const postRecipe = (payload) => {
 };
 
 export const getDetail =(id)=>{
-    const endpoint = `http://localhost:3001/recipes/${id}`
+    const endpoint = `https://bestfood-back.onrender.com/recipes/${id}`
     return async(dispatch)=>{
         try {
             const {data} = await axios.get(endpoint);
